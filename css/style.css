@@ -1,0 +1,15 @@
+.btn-red {
+  color: #FFF;
+  background: red;
+  font-weight: bold;
+  border: 0;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body {
+  background-color: #3edf86;
+}
+
+/*# sourceMappingURL=style.css.map */

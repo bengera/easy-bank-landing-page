@@ -1,0 +1,22 @@
+{
+  "name": "easy-bank-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "scss:watch": "sass --watch sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bengera/easy-bank-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bengera/easy-bank-landing-page/issues"
+  },
+  "homepage": "https://github.com/bengera/easy-bank-landing-page#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
