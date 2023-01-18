@@ -1,15 +1,33 @@
-.btn-red {
-  color: #FFF;
-  background: red;
-  font-weight: bold;
-  border: 0;
-  padding: 1rem 2rem;
-  font-size: 20px;
-  cursor: pointer;
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #3edf86;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-size: 1.125rem;
+  font-family: "Public Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(233deg, 8%, 62%);
+  font-weight: 300;
+}
+a:hover {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

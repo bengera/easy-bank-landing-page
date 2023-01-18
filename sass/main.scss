@@ -1,9 +1,6 @@
-@use './components/buttons';
-
-$color-green: #3edf86;
+@use './base/global';
 
 
-body {
-    background-color: $color-green;
-}
+
+
 
