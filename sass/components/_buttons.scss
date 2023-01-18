@@ -1,4 +1,17 @@
-.cta-desktop {
-    color: $color-lime-green;
+@use '../abstracts' as *;
+@use '../base' as *;
+
+button {
     cursor: pointer;
+}
+
+.cta {
+    color:$color-white;
+    width: 163px;
+    height: 44px;
+    font-family: $font;
+    font-weight: $bold;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border: 0;
+    border-radius: 22px;
 }

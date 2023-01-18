@@ -1,8 +1,14 @@
+@use '../abstracts' as *;
+
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
+  background-color: $color-white;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 
   .hamburger-menu {
     background-color: transparent;
