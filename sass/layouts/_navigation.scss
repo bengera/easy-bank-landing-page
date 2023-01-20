@@ -1,6 +1,7 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,6 +10,40 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+
+  &__list-container {
+    display: none;
+    position: absolute;
+    background-color: $color-white;
+    padding: 1.5rem;
+    width: 327px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 106px;
+    width: 90vw;
+    border-radius: 4px;
+  }
+
+  &__list {
+    padding-top: 1rem;
+  }
+
+  &__list-item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    
+  }
+
+  &__list-link {
+    color: $color-dark-blue;
+    
+  }
 
   .hamburger-menu {
     background-color: transparent;
@@ -19,17 +54,18 @@
     width: 24px;
     height: 24px;
     background-position: center center;
-    padding-top: 5px;
+    
   }
 
-  .hamburger-menu.active {
-    background-image: url(/images/icon-close.svg); }
-
-  //   &__list {
-  //     list-style: none;
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 2rem;
-  //     margin-bottom: 1.5rem;
-  //   }
+ 
 }
+
+.hamburger-menu.active {
+  background-image: url(/images/icon-close.svg);
+}
+
+.nav__list-container.show {
+  display: block;
+}
+
+

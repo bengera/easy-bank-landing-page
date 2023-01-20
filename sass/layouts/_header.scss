@@ -16,13 +16,12 @@
     width: 100vw;
     -webkit-transform: translateY(-35%);
     transform: translateY(-12%);
+    background-image: url(/images/bg-intro-mobile.svg);
 
-    // background-image: url(/images/image-mockups.png);
-    // background-position: top -145px center;
-    // background-size: cover;
-    // height: 338px;
-    // background-repeat: no-repeat;
-    // margin-bottom: 41px;
+  }
+
+  &__right-content.darken {
+    filter: brightness(50%);
   }
 
   &__img {

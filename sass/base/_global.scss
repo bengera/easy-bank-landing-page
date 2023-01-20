@@ -43,3 +43,7 @@ a {
   left: 0;
   z-index: -1;
 }
+
+.overlay.show {
+  background-image: linear-gradient(to bottom, #2d314d, #3f435d, #52556d, #65687d, #797c8e, #8b8d9d, #9d9eac, #afb0bb, #c3c3cc, #d7d7dc, #ebebee, #ffffff);
+}
