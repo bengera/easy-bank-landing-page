@@ -27,12 +27,16 @@ body {
 a {
   text-decoration: none;
   color: $color-grayish-blue;
-  font-weight: t.$thin;
+  font-weight: t.$regular;
 
-  &:hover {
-    font-weight: t.$bold;
-  }
+  // &:hover {
+  //   font-weight: t.$bold;
+  // }
 }
+
+// section {
+//   margin-top: 10.875rem;
+// }
 
 .overlay {
   position: fixed;
@@ -45,5 +49,9 @@ a {
 }
 
 .overlay.show {
-  background-image: linear-gradient(to bottom, #2d314d, #3f435d, #52556d, #65687d, #797c8e, #8b8d9d, #9d9eac, #afb0bb, #c3c3cc, #d7d7dc, #ebebee, #ffffff);
+  // position: fixed;
+  opacity: 0.6;
+  z-index: 1;
+  // background-image: linear-gradient(to bottom, #2d314d, #3f435d, #52556d, #65687d, #797c8e, #8b8d9d, #9d9eac, #afb0bb, #c3c3cc, #d7d7dc, #ebebee, #ffffff);
+  background-color: rgba(45,49,77,1);
 }

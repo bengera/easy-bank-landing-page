@@ -12,12 +12,12 @@
 
   &__right-content {
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: left bottom;
+    background-size: 101%;
     width: 100vw;
     -webkit-transform: translateY(-35%);
     transform: translateY(-12%);
     background-image: url(/images/bg-intro-mobile.svg);
-
   }
 
   &__right-content.darken {
@@ -26,5 +26,9 @@
 
   &__img {
     width: 100%;
+  }
+
+  &__description {
+    margin-bottom: 2rem;
   }
 }
