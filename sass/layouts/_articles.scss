@@ -1,0 +1,24 @@
+.articles {
+  max-width: 327px;
+  margin: 0 auto;
+  margin-top: 5.5rem;
+
+  &__content-container {
+    // background-color: #FFF;
+  }
+
+  &__heading {
+    margin-bottom: 1.938rem;
+    text-align: center;
+  }
+
+  &__img {
+    max-width: 327px;
+  }
+
+  &__text-content {
+    padding: 2rem;
+    padding-left: 1.5rem;
+    padding-top: 1.563rem;
+  }
+}

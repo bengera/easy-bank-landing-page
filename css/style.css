@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Public Sans", sans-serif;
   font-weight: 300;
   color: hsl(233deg, 26%, 24%);
@@ -15,6 +15,24 @@ h2 {
   font-size: 2rem;
   line-height: 37.6px;
   letter-spacing: -0.57px;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 20px;
+  letter-spacing: -0.29px;
+}
+
+article {
+  margin-bottom: 2.5rem;
+  background-color: #FFF;
+}
+
+address {
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  color: hsl(233deg, 8%, 62%);
 }
 
 p {
@@ -39,6 +57,7 @@ html {
 }
 
 body {
+  background-color: #F9F9F9;
   font-size: 1.125rem;
   line-height: 26px;
   margin: 0 auto;
@@ -194,6 +213,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-bottom: 4rem;
 }
 .benefits__box {
   display: flex;
@@ -205,6 +225,23 @@ button {
   width: 72px;
   height: 72px;
   margin-bottom: 0.5rem;
+}
+.articles {
+  max-width: 327px;
+  margin: 0 auto;
+  margin-top: 5.5rem;
+}
+.articles__heading {
+  margin-bottom: 1.938rem;
+  text-align: center;
+}
+.articles__img {
+  max-width: 327px;
+}
+.articles__text-content {
+  padding: 2rem;
+  padding-left: 1.5rem;
+  padding-top: 1.563rem;
 }
 
 /*# sourceMappingURL=style.css.map */
