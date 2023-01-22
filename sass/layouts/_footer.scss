@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.footer {
+  background-color: $color-dark-blue;
+  padding: 2rem;
+
+  &__logo {
+    width: 139px;
+  }
+
+  &__social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  &__col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__list-link {
+    color: $color-white;
+    font-weight: $thin;
+    font-size: 0.938rem;
+  }
+
+  &__col-3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+  }
+}
