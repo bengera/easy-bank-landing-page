@@ -148,7 +148,7 @@ button {
 }
 .nav .hamburger-menu {
   background-color: transparent;
-  background-image: url(/images/icon-hamburger.svg);
+  background-image: url(../images/icon-hamburger.svg);
   background-repeat: no-repeat;
   border: 0;
   cursor: pointer;
