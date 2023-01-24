@@ -135,7 +135,7 @@ button {
     padding: 2rem;
     background-color: hsl(0deg, 0%, 100%);
     width: 100%;
-    z-index: 100;
+    z-index: 101;
   }
 }
 .nav__inner-container {
