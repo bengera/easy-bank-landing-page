@@ -122,13 +122,9 @@ button {
 }
 
 .nav {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  position: fixed;
   padding: 2rem;
   background-color: hsl(0deg, 0%, 100%);
-  position: fixed;
   width: 100%;
   z-index: 100;
 }
@@ -136,6 +132,24 @@ button {
   .nav {
     position: relative;
     flex-direction: row-reverse;
+    padding: 2rem;
+    background-color: hsl(0deg, 0%, 100%);
+    width: 100%;
+    z-index: 100;
+  }
+}
+.nav__inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+@media only screen and (min-width: 43.75rem) {
+  .nav__inner-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 .nav__list-container {
@@ -159,6 +173,7 @@ button {
     position: static;
     padding: 0;
     width: auto;
+    padding-top: 0.4rem;
   }
 }
 .nav__list {
@@ -168,6 +183,7 @@ button {
   .nav__list {
     display: flex;
     gap: 30px;
+    padding-top: 0;
   }
 }
 .nav__list-item {
@@ -176,6 +192,11 @@ button {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 43.75rem) {
+  .nav__list-item {
+    margin-bottom: 0;
+  }
 }
 .nav__list-link {
   color: hsl(233deg, 26%, 24%);
@@ -186,7 +207,7 @@ button {
 @media only screen and (min-width: 43.75rem) {
   .nav__cta {
     display: block;
-    align-items: center;
+    align-self: center;
   }
 }
 .nav .hamburger-menu {
