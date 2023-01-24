@@ -10,6 +10,13 @@ h1 {
   line-height: 47px;
   letter-spacing: -0.71px;
 }
+@media only screen and (min-width: 43.75rem) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -1px;
+  }
+}
 
 h2 {
   font-size: 2rem;
@@ -41,6 +48,13 @@ p {
   letter-spacing: -0.23px;
   font-weight: 400;
   color: hsl(233deg, 8%, 62%);
+}
+@media only screen and (min-width: 43.75rem) {
+  p {
+    font-size: 1.125rem;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+  }
 }
 
 small {
@@ -118,6 +132,12 @@ button {
   width: 100%;
   z-index: 100;
 }
+@media only screen and (min-width: 43.75rem) {
+  .nav {
+    position: relative;
+    flex-direction: row-reverse;
+  }
+}
 .nav__list-container {
   display: none;
   position: absolute;
@@ -133,8 +153,22 @@ button {
   width: 90vw;
   border-radius: 4px;
 }
+@media only screen and (min-width: 43.75rem) {
+  .nav__list-container {
+    display: block;
+    position: static;
+    padding: 0;
+    width: auto;
+  }
+}
 .nav__list {
   padding-top: 1rem;
+}
+@media only screen and (min-width: 43.75rem) {
+  .nav__list {
+    display: flex;
+    gap: 30px;
+  }
 }
 .nav__list-item {
   list-style: none;
@@ -146,6 +180,15 @@ button {
 .nav__list-link {
   color: hsl(233deg, 26%, 24%);
 }
+.nav__cta {
+  display: none;
+}
+@media only screen and (min-width: 43.75rem) {
+  .nav__cta {
+    display: block;
+    align-items: center;
+  }
+}
 .nav .hamburger-menu {
   background-color: transparent;
   background-image: url(../images/icon-hamburger.svg);
@@ -156,6 +199,11 @@ button {
   height: 24px;
   background-position: center center;
 }
+@media only screen and (min-width: 43.75rem) {
+  .nav .hamburger-menu {
+    display: none;
+  }
+}
 
 .hamburger-menu.active {
   background-image: url(../images/icon-close.svg);
@@ -165,6 +213,18 @@ button {
   display: block;
 }
 
+@media only screen and (min-width: 43.75rem) {
+  .logo {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 43.75rem) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .header__left-content {
   display: flex;
   flex-direction: column;
@@ -175,6 +235,16 @@ button {
   margin: 0 auto;
   margin-top: -50px;
 }
+@media only screen and (min-width: 43.75rem) {
+  .header__left-content {
+    margin-top: 0;
+    text-align: left;
+    max-width: 447px;
+    align-items: baseline;
+    margin-top: 10.625rem;
+    gap: 1.5rem;
+  }
+}
 .header__right-content {
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -183,6 +253,14 @@ button {
   -webkit-transform: translateY(-35%);
   transform: translateY(-12%);
   background-image: url(/images/bg-intro-mobile.svg);
+}
+@media only screen and (min-width: 43.75rem) {
+  .header__right-content {
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-size: 170%;
+    transform: translateY(-13%);
+    width: auto;
+  }
 }
 .header__right-content.darken {
   filter: brightness(50%);
