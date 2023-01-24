@@ -15,18 +15,18 @@
     padding: 2rem;
     background-color: hsl(0deg, 0%, 100%);
     width: 100%;
-    z-index: 101;
+    z-index: 100;
   }
 
   &__inner-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1110px;
     margin: 0 auto;
     gap: 2rem;
 
     @media only screen and (min-width: $bp-desktop) {
+      max-width: 1200px;
       flex-direction: row-reverse;
       justify-content: space-between;
     }
@@ -53,7 +53,7 @@
       position: static;
       padding: 0;
       width: auto;
-      padding-top: 0.4rem;
+      padding-top: 0.6rem;
     }
   }
 
@@ -81,6 +81,11 @@
 
   &__list-link {
     color: $color-dark-blue;
+
+    @media only screen and (min-width: $bp-desktop) {
+      font-size: 0.875rem;
+      color: $color-grayish-blue;
+    }
   }
 
   &__cta {

@@ -135,19 +135,19 @@ button {
     padding: 2rem;
     background-color: hsl(0deg, 0%, 100%);
     width: 100%;
-    z-index: 101;
+    z-index: 100;
   }
 }
 .nav__inner-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1110px;
   margin: 0 auto;
   gap: 2rem;
 }
 @media only screen and (min-width: 43.75rem) {
   .nav__inner-container {
+    max-width: 1200px;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
@@ -173,7 +173,7 @@ button {
     position: static;
     padding: 0;
     width: auto;
-    padding-top: 0.4rem;
+    padding-top: 0.6rem;
   }
 }
 .nav__list {
@@ -200,6 +200,12 @@ button {
 }
 .nav__list-link {
   color: hsl(233deg, 26%, 24%);
+}
+@media only screen and (min-width: 43.75rem) {
+  .nav__list-link {
+    font-size: 0.875rem;
+    color: hsl(233deg, 8%, 62%);
+  }
 }
 .nav__cta {
   display: none;
@@ -273,11 +279,11 @@ button {
   width: 100vw;
   -webkit-transform: translateY(-35%);
   transform: translateY(-12%);
-  background-image: url(/images/bg-intro-mobile.svg);
+  background-image: url(../images/bg-intro-mobile.svg);
 }
 @media only screen and (min-width: 43.75rem) {
   .header__right-content {
-    background-image: url(/images/bg-intro-desktop.svg);
+    background-image: url(../images/bg-intro-desktop.svg);
     background-size: 170%;
     transform: translateY(-13%);
     width: auto;
@@ -288,6 +294,11 @@ button {
 }
 .header__img {
   width: 100%;
+}
+@media only screen and (min-width: 43.75rem) {
+  .header__img {
+    padding-left: 8rem;
+  }
 }
 .header__description {
   margin-bottom: 2rem;

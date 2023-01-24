@@ -33,10 +33,10 @@
     width: 100vw;
     -webkit-transform: translateY(-35%);
     transform: translateY(-12%);
-    background-image: url(/images/bg-intro-mobile.svg);
+    background-image: url(../images/bg-intro-mobile.svg);
 
     @media only screen and (min-width: $bp-desktop) {
-      background-image: url(/images/bg-intro-desktop.svg);
+      background-image: url(../images/bg-intro-desktop.svg);
       background-size: 170%;
       transform: translateY(-13%);
       width: auto;
@@ -49,6 +49,11 @@
 
   &__img {
     width: 100%;
+
+    @media only screen and (min-width: $bp-desktop) {
+      padding-left: 8rem;
+    }
+    
   }
 
   &__description {
