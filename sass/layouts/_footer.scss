@@ -5,8 +5,20 @@
   background-color: $color-dark-blue;
   padding: 2rem;
 
+  &__content {
+    @media only screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1336px;
+      margin: 0 auto;
+    }
+  }
+
   &__logo {
     width: 139px;
+    @media only screen and (min-width: $bp-desktop) {
+      width: 168px;
+    }
   }
 
   &__social-icons {
@@ -19,12 +31,29 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
+
+    @media only screen and (min-width: $bp-desktop) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__col-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (min-width: $bp-desktop) {
+      justify-content: center;
+      height: 145px;
+      // border: 2px solid red;
+    }
+  }
+
+  &__col-2 {
+    @media only screen and (min-width: $bp-desktop) {
+      margin-right: 20rem;
+    }
   }
 
   &__list {
@@ -33,6 +62,11 @@
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 2rem;
+
+    @media only screen and (min-width: $bp-desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__list-item {
@@ -51,5 +85,10 @@
     margin-top: 2rem;
     align-items: center;
     gap: 1rem;
+
+    @media only screen and (min-width: $bp-desktop) {
+    margin-top: 0;
+    justify-content: center;
+    }
   }
 }

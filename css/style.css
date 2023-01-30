@@ -288,7 +288,7 @@ button {
   .header {
     display: flex;
     flex-direction: row-reverse;
-    height: 666px;
+    height: 732px;
   }
 }
 .header__left-content {
@@ -323,7 +323,7 @@ button {
 @media only screen and (min-width: 50.625rem) {
   .header__right-content {
     background-image: url(../images/bg-intro-desktop.svg);
-    background-size: 170%;
+    background-size: 120%;
     transform: translateY(-13%);
     width: auto;
   }
@@ -334,6 +334,11 @@ button {
 .header__img {
   width: 100%;
   height: auto;
+}
+@media only screen and (min-width: 50.625rem) {
+  .header__img {
+    margin-left: 2rem;
+  }
 }
 .header__description {
   margin-bottom: 2rem;
@@ -414,12 +419,28 @@ button {
   max-width: 327px;
   margin: 5.5rem auto;
 }
+@media only screen and (min-width: 50.625rem) {
+  .articles {
+    max-width: 1360px;
+  }
+}
+@media only screen and (min-width: 50.625rem) {
+  .articles__content-container {
+    display: flex;
+    gap: 2rem;
+  }
+}
 .articles__heading {
   margin-bottom: 1.938rem;
   text-align: center;
 }
 .articles__img {
   max-width: 327px;
+}
+@media only screen and (min-width: 50.625rem) {
+  .articles__img {
+    height: 220px;
+  }
 }
 .articles__text-content {
   padding: 2rem;
@@ -431,8 +452,21 @@ button {
   background-color: hsl(233deg, 26%, 24%);
   padding: 2rem;
 }
+@media only screen and (min-width: 50.625rem) {
+  .footer__content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1336px;
+    margin: 0 auto;
+  }
+}
 .footer__logo {
   width: 139px;
+}
+@media only screen and (min-width: 50.625rem) {
+  .footer__logo {
+    width: 168px;
+  }
 }
 .footer__social-icons {
   display: flex;
@@ -444,10 +478,27 @@ button {
   height: 24px;
   cursor: pointer;
 }
+@media only screen and (min-width: 50.625rem) {
+  .footer__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
 .footer__col-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (min-width: 50.625rem) {
+  .footer__col-1 {
+    justify-content: center;
+    height: 145px;
+  }
+}
+@media only screen and (min-width: 50.625rem) {
+  .footer__col-2 {
+    margin-right: 20rem;
+  }
 }
 .footer__list {
   align-items: center;
@@ -455,6 +506,12 @@ button {
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 2rem;
+}
+@media only screen and (min-width: 50.625rem) {
+  .footer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .footer__list-item {
   list-style: none;
@@ -470,6 +527,12 @@ button {
   margin-top: 2rem;
   align-items: center;
   gap: 1rem;
+}
+@media only screen and (min-width: 50.625rem) {
+  .footer__col-3 {
+    margin-top: 0;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

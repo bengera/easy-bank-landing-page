@@ -4,7 +4,7 @@
   @media only screen and (min-width: $bp-desktop) {
     display: flex;
     flex-direction: row-reverse;
-    height: 666px;
+    height: 732px;
   }
 
   &__left-content {
@@ -39,9 +39,10 @@
 
     @media only screen and (min-width: $bp-desktop) {
       background-image: url(../images/bg-intro-desktop.svg);
-      background-size: 170%;
+      background-size: 120%;
       transform: translateY(-13%);
       width: auto;
+      
     }
   }
 
@@ -53,13 +54,14 @@
     width: 100%;
     height: auto;
 
-    // @media only screen and (min-width: $bp-desktop) {
-    //   padding-left: 8rem;
-    //   max-width: 832px;
-    //   min-width: 536px;
-    //   height: auto;
-    //   object-fit: cover;
-    // }
+    @media only screen and (min-width: $bp-desktop) {
+      // padding-left: 8rem;
+      margin-left: 2rem;
+      // max-width: 832px;
+      // min-width: 536px;
+      // height: auto;
+      // object-fit: cover;
+    }
   }
 
   &__description {
