@@ -1,9 +1,10 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
 .header {
   @media only screen and (min-width: $bp-desktop) {
     display: flex;
     flex-direction: row-reverse;
+    height: 666px;
   }
 
   &__left-content {
@@ -23,6 +24,7 @@
       align-items: baseline;
       margin-top: 10.625rem;
       gap: 1.5rem;
+      
     }
   }
 
@@ -49,11 +51,15 @@
 
   &__img {
     width: 100%;
+    height: auto;
 
-    @media only screen and (min-width: $bp-desktop) {
-      padding-left: 8rem;
-    }
-    
+    // @media only screen and (min-width: $bp-desktop) {
+    //   padding-left: 8rem;
+    //   max-width: 832px;
+    //   min-width: 536px;
+    //   height: auto;
+    //   object-fit: cover;
+    // }
   }
 
   &__description {

@@ -1,72 +1,78 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
-
-
-$font: 'Public Sans', sans-serif;
+$font: "Public Sans", sans-serif;
 $thin: 300;
 $regular: 400;
 $bold: 700;
 $font-size: 1.125rem;
 
-h1, h2, h3, h4{
-    font-family: $font;
-    font-weight: $thin;
-    color: $color-dark-blue;
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font;
+  font-weight: $thin;
+  color: $color-dark-blue;
 }
 
 h1 {
-    font-size: 2.5rem;
-    line-height: 47px;
-    letter-spacing: -0.71px;
+  font-size: 2.5rem;
+  line-height: 47px;
+  letter-spacing: -0.71px;
 
-    @media only screen and (min-width: $bp-desktop) {
-        font-size: 3.5rem;
-        line-height: 4rem;
-        letter-spacing: -1px;
-    }
+  @media only screen and (min-width: $bp-desktop) {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -1px;
+  }
 }
 
 h2 {
-    font-size: 2rem;
-    line-height: 37.6px;
-    letter-spacing: -0.57px;
+  font-size: 2rem;
+  line-height: 37.6px;
+  letter-spacing: -0.57px;
+
+  @media only screen and (min-width: $bp-desktop) {
+    font-size: 2.5rem;
+    line-height: 64px;
+    letter-spacing: 0.71px;
+  }
 }
 
 h4 {
-    font-size: 1rem;
-    line-height: 20px;
-    letter-spacing: -0.29px;
+  font-size: 1rem;
+  line-height: 20px;
+  letter-spacing: -0.29px;
 }
 
 article {
-    margin-bottom: 2.5rem;
-    background-color: #FFF;
+  margin-bottom: 2.5rem;
+  background-color: #fff;
 }
 
 address {
-    font-size: 0.625rem;
-    font-style: normal;
-    font-weight: $regular;
-    color: $color-grayish-blue;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: $regular;
+  color: $color-grayish-blue;
 }
 
 p {
-    font-size: 0.938rem;
-    line-height: 25px;
-    letter-spacing: -0.23px;
-    font-weight: $regular;
-    color: $color-grayish-blue;
-    
-    @media only screen and (min-width: $bp-desktop) {
-        font-size: 1.125rem;
-        line-height: 28px;
-        letter-spacing: -0.28125px;
-    }
-    
+  font-size: 0.938rem;
+  line-height: 25px;
+  letter-spacing: -0.23px;
+  font-weight: $regular;
+  color: $color-grayish-blue;
+
+  @media only screen and (min-width: $bp-desktop) {
+    font-size: 1.125rem;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+  }
 }
 
 small {
-    color: $color-grayish-blue;
+  color: $color-grayish-blue;
 }
