@@ -35,9 +35,15 @@ a {
   // }
 }
 
-// section {
-//   margin-top: 10.875rem;
-// }
+svg {
+  cursor: pointer;
+}
+
+svg:hover path {
+  fill: $color-lime-green;
+}
+
+
 
 
 .overlay {
