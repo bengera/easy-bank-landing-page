@@ -11,7 +11,7 @@
   @media only screen and (min-width: $bp-desktop) {
     position: relative;
     flex-direction: row-reverse;
-    padding: 2rem;
+    padding: 1rem;
     background-color: hsl(0deg, 0%, 100%);
     width: 100%;
     z-index: 100;
@@ -52,6 +52,9 @@
       padding: 0;
       width: auto;
       padding-top: 0;
+      // bordeR: 2px solid red;
+      height: 35px;
+      align-self: center;
     }
   }
 
