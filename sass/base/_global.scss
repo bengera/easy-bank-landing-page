@@ -40,7 +40,8 @@ svg {
 }
 
 svg:hover path {
-  fill: $color-lime-green;
+  fill: #30C88F;
+  @include transition;
 }
 
 

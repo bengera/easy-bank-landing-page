@@ -3,6 +3,8 @@
 
 button {
     cursor: pointer;
+    background: linear-gradient(135deg, rgba(51, 211, 94, 1), rgba(42, 182, 217, 1));
+   
 }
 
 .cta {
@@ -14,4 +16,9 @@ button {
     background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
     border: 0;
     border-radius: 22px;
+    @include transition;
+
+    &:hover {
+        background: linear-gradient(135deg, rgba(51, 211, 94, 0.4), rgba(42, 182, 217, 0.4));
+    }
 }

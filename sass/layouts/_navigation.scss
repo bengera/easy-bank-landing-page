@@ -2,7 +2,6 @@
 @use "../base/global" as *;
 
 .nav {
-
   position: fixed;
   padding: 2rem;
   background-color: $color-white;
@@ -30,7 +29,6 @@
       flex-direction: row-reverse;
       justify-content: space-between;
     }
-    
   }
 
   &__list-container {
@@ -53,7 +51,7 @@
       position: static;
       padding: 0;
       width: auto;
-      padding-top: 0.6rem;
+      padding-top: 0;
     }
   }
 
@@ -85,6 +83,22 @@
     @media only screen and (min-width: $bp-desktop) {
       font-size: 0.875rem;
       color: $color-grayish-blue;
+
+      position: relative;
+      display: inline-block;
+      padding-bottom: 28px;
+
+      &:hover {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 4px;
+          background-color: #30c88f;
+        }
+      }
     }
   }
 
@@ -126,6 +140,3 @@
     align-self: center;
   }
 }
-
-
-

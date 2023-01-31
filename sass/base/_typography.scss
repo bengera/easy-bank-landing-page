@@ -45,11 +45,23 @@ h4 {
   font-size: 1rem;
   line-height: 20px;
   letter-spacing: -0.29px;
+
+  @media only screen and (min-width: $bp-desktop) {
+    &:hover {
+      color: #30C88F;
+      cursor: pointer;
+      @include transition;
+    }
+  }
 }
 
 article {
   margin-bottom: 2.5rem;
   background-color: #fff;
+
+  @media only screen and (min-width: $bp-desktop) {
+    max-width: 327px;
+  }
 }
 
 address {

@@ -39,10 +39,22 @@ h4 {
   line-height: 20px;
   letter-spacing: -0.29px;
 }
+@media only screen and (min-width: 50.625rem) {
+  h4:hover {
+    color: #30C88F;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+}
 
 article {
   margin-bottom: 2.5rem;
   background-color: #fff;
+}
+@media only screen and (min-width: 50.625rem) {
+  article {
+    max-width: 327px;
+  }
 }
 
 address {
@@ -105,7 +117,8 @@ svg {
 }
 
 svg:hover path {
-  fill: hsl(136deg, 65%, 51%);
+  fill: #30C88F;
+  transition: all 0.2s ease-in-out;
 }
 
 .overlay {
@@ -126,6 +139,7 @@ svg:hover path {
 
 button {
   cursor: pointer;
+  background: linear-gradient(135deg, rgb(51, 211, 94), rgb(42, 182, 217));
 }
 
 .cta {
@@ -137,6 +151,10 @@ button {
   background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
   border: 0;
   border-radius: 22px;
+  transition: all 0.2s ease-in-out;
+}
+.cta:hover {
+  background: linear-gradient(135deg, rgba(51, 211, 94, 0.4), rgba(42, 182, 217, 0.4));
 }
 
 .fade-in {
@@ -219,7 +237,7 @@ button {
     position: static;
     padding: 0;
     width: auto;
-    padding-top: 0.6rem;
+    padding-top: 0;
   }
 }
 .nav__list {
@@ -251,6 +269,18 @@ button {
   .nav__list-link {
     font-size: 0.875rem;
     color: hsl(233deg, 8%, 62%);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 28px;
+  }
+  .nav__list-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #30c88f;
   }
 }
 .nav__cta {
@@ -429,12 +459,14 @@ button {
 }
 @media only screen and (min-width: 50.625rem) {
   .articles {
-    max-width: 1360px;
+    max-width: 1410px;
   }
 }
 @media only screen and (min-width: 50.625rem) {
   .articles__content-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
   }
 }
@@ -448,6 +480,7 @@ button {
 @media only screen and (min-width: 50.625rem) {
   .articles__img {
     height: 220px;
+    width: 100%;
   }
 }
 .articles__text-content {
@@ -505,7 +538,7 @@ button {
 }
 @media only screen and (min-width: 50.625rem) {
   .footer__col-2 {
-    margin-right: 20rem;
+    margin-right: 4rem;
   }
 }
 .footer__list {
@@ -519,6 +552,7 @@ button {
   .footer__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 4.9rem;
   }
 }
 .footer__list-item {
@@ -528,6 +562,10 @@ button {
   color: hsl(0deg, 0%, 100%);
   font-weight: 300;
   font-size: 0.938rem;
+  transition: all 0.2s ease-in-out;
+}
+.footer__list-link:hover {
+  color: #30C88F;
 }
 .footer__col-3 {
   display: flex;

@@ -52,7 +52,8 @@
 
   &__col-2 {
     @media only screen and (min-width: $bp-desktop) {
-      margin-right: 20rem;
+      margin-right: 4rem;
+      
     }
   }
 
@@ -66,6 +67,7 @@
     @media only screen and (min-width: $bp-desktop) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 4.9rem;
     }
   }
 
@@ -77,6 +79,11 @@
     color: $color-white;
     font-weight: $thin;
     font-size: 0.938rem;
+    @include transition;
+
+    &:hover {
+      color: #30C88F;
+    }
   }
 
   &__col-3 {
