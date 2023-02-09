@@ -151,7 +151,6 @@ button {
   background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
   border: 0;
   border-radius: 22px;
-  transition: all 0.2s ease-in-out;
 }
 .cta:hover {
   background: linear-gradient(135deg, rgba(51, 211, 94, 0.4), rgba(42, 182, 217, 0.4));
@@ -567,7 +566,7 @@ button {
   transition: all 0.2s ease-in-out;
 }
 .footer__list-link:hover {
-  color: #30C88F;
+  color: #30c88f;
 }
 .footer__col-3 {
   display: flex;
@@ -580,6 +579,12 @@ button {
   .footer__col-3 {
     margin-top: 0;
     justify-content: center;
+  }
+}
+@media only screen and (min-width: 50.625rem) {
+  .footer__cta:hover {
+    background: rgb(131, 223, 179);
+    background: linear-gradient(90deg, rgb(131, 223, 179) 0%, rgb(129, 217, 205) 53%, rgb(128, 214, 221) 100%);
   }
 }
 
