@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://bengera.github.io/easy-bank-landing-page/)
+- [Live site](https://bengera.github.io/easy-bank-landing-page/)
 
 ## My process
 
