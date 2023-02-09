@@ -21,6 +21,11 @@
   &__heading {
     margin-bottom: 1.938rem;
     text-align: center;
+
+    @media only screen and (min-width: $bp-desktop) {
+      text-align: left;
+    }
+    
   }
 
   &__img {

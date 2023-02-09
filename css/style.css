@@ -475,6 +475,11 @@ button {
   margin-bottom: 1.938rem;
   text-align: center;
 }
+@media only screen and (min-width: 50.625rem) {
+  .articles__heading {
+    text-align: left;
+  }
+}
 .articles__img {
   max-width: 327px;
 }
@@ -498,7 +503,7 @@ button {
   .footer__content {
     display: flex;
     justify-content: space-around;
-    max-width: 1336px;
+    max-width: 1570px;
     margin: 0 auto;
   }
 }
@@ -582,6 +587,9 @@ button {
   }
 }
 @media only screen and (min-width: 50.625rem) {
+  .footer__cta {
+    margin-left: 4rem;
+  }
   .footer__cta:hover {
     background: rgb(131, 223, 179);
     background: linear-gradient(90deg, rgb(131, 223, 179) 0%, rgb(129, 217, 205) 53%, rgb(128, 214, 221) 100%);
