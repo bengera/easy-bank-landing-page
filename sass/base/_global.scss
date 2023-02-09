@@ -30,9 +30,7 @@ a {
   color: $color-grayish-blue;
   font-weight: t.$regular;
 
-  // &:hover {
-  //   font-weight: t.$bold;
-  // }
+  
 }
 
 svg {
@@ -58,9 +56,7 @@ svg:hover path {
 }
 
 .overlay.show {
-  // position: fixed;
   opacity: 0.6;
   z-index: 1;
-  // background-image: linear-gradient(to bottom, #2d314d, #3f435d, #52556d, #65687d, #797c8e, #8b8d9d, #9d9eac, #afb0bb, #c3c3cc, #d7d7dc, #ebebee, #ffffff);
   background-color: rgba(45,49,77,1);
 }
